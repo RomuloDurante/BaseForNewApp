@@ -16,7 +16,7 @@
       },
 
       test: function (){
-        console.log('You are cool!');
+        console.log('You are ===!');
 
         return this;
       }

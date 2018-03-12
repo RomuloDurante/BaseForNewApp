@@ -19,7 +19,6 @@
     "postcss-nested": "^3.0.0",
     "postcss-simple-vars": "^4.1.0",
     "webpack": "3.10.0"
-   
   },
   "dependencies": {
     "normalize.css": "^8.0.0"
