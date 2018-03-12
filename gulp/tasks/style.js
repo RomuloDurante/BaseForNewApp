@@ -4,17 +4,18 @@
 var gulp = require('gulp'),
 postCss = require('gulp-postcss'), 
 autoPrefixer = require('autoprefixer'), //create prefixer lines
-cssvars = require('postcss-simple-vars'), //use variables on the css
-nested = require('postcss-nested'),//use nested on the css
-cssImport = require('postcss-import'); //import the files from the modules folder into the main file css
+cssImport = require('postcss-import'), //import the files from the modules folder into the main file css
+compileSass = require('gulp-sass'); //compile the sass files if you decide use sass
 
 
 
 gulp.task('style', function() {
-  return gulp.src('./app/assets/styles/style.css')
+  return gulp.src('./app/assets/styles/style.scss')
+        //compile sass
+        .pipe(compileSass()) 
 
         // here you put the postcss filters inside the array 
-        .pipe(postCss([cssImport, cssvars, nested, autoPrefixer])) 
+        .pipe(postCss([cssImport, autoPrefixer])) 
 
         //put the style css in the temporary folder through the pipe
         .pipe(gulp.dest('./app/temp/styles/'));

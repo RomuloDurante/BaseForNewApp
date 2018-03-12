@@ -23,6 +23,11 @@ gulp.task('watch', function() { //whatever change made in the file, the watch ta
     console.log('css have been tranfered to temp folder !');
   });
 
+  watch('./app/assets/scripts/**/*.js', function() {
+    gulp.start('scripts');
+    browserSync.reload();
+  });
+
 });
 
 gulp.task('cssInject',['style'], function() {
