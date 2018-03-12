@@ -1,5 +1,5 @@
 (function(global) {
-    var Person = function(name, lastname) { // this is an exemple of the a IFFE function
+    var Person = function(name, lastname) { // this is an exemple of the a IFEE function
       return new Person.init(name, lastname);
     }
 
