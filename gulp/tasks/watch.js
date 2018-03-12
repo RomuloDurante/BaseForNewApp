@@ -9,16 +9,15 @@ gulp.task('watch', function() { //whatever change made in the file, the watch ta
 
   browserSync.init({
     server: {
-      notify: false,
       baseDir: "app"
     }
   });
-  
+
   watch('./app/index.html', function() { 
     browserSync.reload();
   });
 
-  watch('./app/assets/**/*.scss', function() {
+  watch('./app/assets/**/*.css', function() {
     gulp.start('cssInject');
     console.log('css have been tranfered to temp folder !');
   });

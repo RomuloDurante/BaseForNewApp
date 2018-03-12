@@ -3,3 +3,5 @@
 */
 
 require('./gulp/tasks/sassOrcss.js'); 
+require('./gulp/tasks/style.js'); //require the style task from gulp/tasks
+require('./gulp/tasks/watch.js'); //require the watch task from gulp/tasks

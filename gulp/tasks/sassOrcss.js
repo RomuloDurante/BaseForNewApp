@@ -18,7 +18,7 @@ gulp.task('sassScss', function() {
 });
 
 gulp.task('baseScss', function() {
-  return gulp.src('./gulp/sassOrcss/sass/_base.scss')
+  return gulp.src('./gulp/sassOrcss/sass/global.scss')
   .pipe(gulp.dest('./app/assets/styles/base/'));
 });
 
@@ -42,7 +42,7 @@ gulp.task('styleCss', function() {
 });
 
 gulp.task('baseCss', function() {
-  return gulp.src('./gulp/sassOrcss/css/_base.css')
+  return gulp.src('./gulp/sassOrcss/css/global.css')
   .pipe(gulp.dest('./app/assets/styles/base/'));
 });
 

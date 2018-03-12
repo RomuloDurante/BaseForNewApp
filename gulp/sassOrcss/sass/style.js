@@ -5,7 +5,6 @@ var gulp = require('gulp'),
 postCss = require('gulp-postcss'), 
 autoPrefixer = require('autoprefixer'), //create prefixer lines
 cssImport = require('postcss-import'), //import the files from the modules folder into the main file css
-browserSync = require('browser-sync').create(), //inject css and reload the browser
 compileSass = require('gulp-sass'); //compile the sass files if you decide use sass
 
 
