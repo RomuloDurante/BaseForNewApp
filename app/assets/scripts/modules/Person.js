@@ -1,5 +1,5 @@
 (function(global) {
-    var Person = function(name, lastname) {
+    var Person = function(name, lastname) { // this is an exemple of the a IFFE function
       return new Person.init(name, lastname);
     }
 
@@ -16,9 +16,9 @@
       },
 
       test: function (){
-        console.log('You are ===!');
+        console.log('You are great!');
 
-        return this;
+        return this; // use for chainable method
       }
     }
 
@@ -26,7 +26,7 @@
 
 
       var person = Person('Romulo','Durante');
-      person.greet().test();
+      person.greet().test(); // this is chainable method
       
 }(window));
 
