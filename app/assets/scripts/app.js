@@ -2,4 +2,4 @@
 /* ========> My Code start here =================        */
 /******************************************************* */
 
-var P$ = require('./modules/Person');
+var obj = require('./modules/Obj'); // call the modules
